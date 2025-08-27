@@ -1,0 +1,219 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: 0px;
+    transition: all 0.5s ease;
+}
+
+body{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    background: linear-gradient(to right, rgb(208, 204, 224),rgb(196, 227, 248));
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.calculator-light{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;
+}
+.theme-toggle{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #000;
+    cursor: pointer;
+    z-index: 1;
+    margin: 5px;
+}
+.theme-toggle.active{
+    color: #fff;
+}
+
+.theme-toggle-active::before{
+ background-color: #333;
+}
+
+.theme-toggle::before{
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #333;
+    z-index: -1;
+}
+
+#display{
+    margin: 0.10px;
+    height: 150px;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+}
+
+#display::-webkit-scrollbar{
+    display: block;
+    height: 3px;
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 6px 4px gray;
+}
+
+
+
+
+.calculator {
+    background-image: linear-gradient(to right, rgb(182, 220, 252),rgb(244, 244, 255),rgb(182, 220, 252));
+}
+.calculator #display {
+    color: #0a1e23;
+}
+
+.calculator button#clear{
+    background-color: rgb(236, 236, 248);
+    color: rgb(166, 212, 250);
+}
+
+.calculator button.btn-number{
+    background-color: #c3eaff;
+    color: #000;
+}
+
+.calculator button.btn-operator{
+    background-color: rgb(136, 196, 248);
+    font-size: 30px;
+    color: #fcebff;
+}
+
+.calculator button.btn-equal{
+    background-color: #dbf3ee;
+    color: #000;
+}
+.calculator button.btn-point{
+    background-color: aliceblue;
+    color: #000;
+    font-size: 40px;
+}
+.calculator button.btn-equal:hover{
+    background-color: rgb(207, 207, 253);
+    color: rgb(79, 38, 242);
+}
+.calculator button.btn-point:hover{
+    background-color: rgb(200, 191, 234);
+    color: rgb(66, 22, 244);
+}
+.calculator button#clear:hover{
+    background-color: rgb(192, 180, 236);
+    color: rgb(63, 16, 250);
+}
+
+.calculator button.btn-number:hover{
+    background-color: rgb(218, 208, 254);
+    color: rgb(61, 14, 249);
+}
+
+.calculator button.btn-operator:hover{
+    background-color: rgb(145, 136, 177);
+    font-size: 30px;
+    color: rgb(61, 14, 249);
+}
+
+
+
+
+
+
+
+
+
+.calculator.dark {
+    background-image: linear-gradient(to right, #071115, rgb(59, 59, 59), #071115);
+}
+.calculator.dark #display {
+    color: #f8fafd;
+}
+
+.calculator.dark button#clear{
+    background-color: #2d191e;
+    color: #ff2332;
+}
+
+.calculator.dark button.btn-number{
+    background-color: #1b2f38;
+    color: #f8fafb;
+}
+
+.calculator.dark button.btn-operator{
+    background-color: #2e1f39;
+    color: #f80d7b;
+}
+
+.calculator.dark button.btn-equal{
+    background-color: #223323;
+    color: #ffffff;
+}
+.calculator.dark button.btn-point{
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+.calculator.dark button#clear:hover{
+    background-color: rgb(65, 63, 63);
+    color: #faf8f8;
+}
+
+.calculator.dark button.btn-number:hover{
+    background-color: #464849;
+    color: #f8fafb;
+}
+
+.calculator.dark button.btn-operator:hover{
+    background-color: #242324;
+    color: #efedee;
+}
+
+.calculator.dark button.btn-equal:hover{
+    background-color:   #323232;
+    color: #ffffff;
+}
+.calculator.dark button.btn-point:hover{
+    background-color: #5d5c5c;
+    color: #fff;
+}
